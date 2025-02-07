@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://png.pngtree.com/background/20230617/original/pngtree-train-in-the-city-a-realistic-3d-rendering-picture-image_3705411.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 350px;
+  box-sizing: border-box; 
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden; 
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.train-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.train-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.train-item:hover {
+  transform: scale(1.05);
+}
+
+.train-time {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffeb3b;
+}
+
+.virtual-time {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffeb3b;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  body {
+    justify-content: center; 
+    padding: 10px;
+  }
+
+  .container {
+    width: 95%; 
+    padding: 15px;
+  }
+
+  .train-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .virtual-time {
+    font-size: 16px;
+  }
+}
